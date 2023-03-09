@@ -1,0 +1,22 @@
+# 允许所有用户代理的浏览器爬虫进行访问（爬取数据）
+User-agent: *
+# 允许访问的内容
+Allow: /
+Allow: /archives/
+Allow: /tags/
+Allow: /categories/
+Allow: /about/
+# 不允许访问的内容
+Disallow: /img/
+Disallow: /css/
+Disallow: /js/
+Disallow: /photos/
+Disallow: /*.css
+Disallow: /*.js
+
+
+Sitemap: https://www.cosycosy.cn/sitemap.xml
+Sitemap: https://www.cosycosy.cn/baidusitemap.xml
+
+Sitemap: http://www.cosycosy.cn/sitemap.xml
+Sitemap: http://www.cosycosy.cn/baidusitemap.xml

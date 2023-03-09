@@ -5,15 +5,15 @@
 # Site
 title: cosycosy
 subtitle: ''
-description: ''
-keywords:
+description: "FangChenjia's Blog"
+keywords: ''
 author: FangChenjia
 language: zh
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://cosycosy.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
