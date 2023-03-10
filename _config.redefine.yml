@@ -199,7 +199,7 @@ local_search:
 # ---------------------------------------------------------------------------------------
 comment:
   enable: true
-  use: gitalk # values: waline | gitalk | twikoo
+  use: twikoo # values: waline | gitalk | twikoo
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
@@ -219,7 +219,7 @@ comment:
   # See: https://github.com/imaegoo/twikoo
   twikoo:
     visitor: true
-    env_id: # Vercel or Tencent Cloud Function environment ID
+    env_id: cosycosy.zeabur.app # Vercel or Tencent Cloud Function environment ID
     region: # environment region. If select Guangzhou, fill in "ap-guangzhou". (optional)
 
 # ---------------------------------------------------------------------------------------
