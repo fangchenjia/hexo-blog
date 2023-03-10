@@ -2,15 +2,15 @@
 title: vscode用户代码段的设置
 toc: true
 comments: true
+banner: "https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover.png"
 tags:
   - vscode
 categories:
   - tool
 description:
-  - vscode怎么自定义设置用户代码段
+  - vscode常用的使用技巧
 keywords:
   - vscode
-  - 自定义
   - 用户代码段
   - 自动
   - 填充
