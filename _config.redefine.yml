@@ -199,7 +199,7 @@ local_search:
 # ---------------------------------------------------------------------------------------
 comment:
   enable: true
-  use: waline # values: waline | gitalk | twikoo
+  use: gitalk # values: waline | gitalk | twikoo
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
@@ -210,10 +210,10 @@ comment:
   # Gitalk
   # See: https://github.com/gitalk/gitalk
   gitalk:
-    github_id: # GitHub repo owner
-    repository: # Repository name to store issues
-    client_id: # GitHub Application Client ID
-    client_secret: # GitHub Application Client Secret
+    github_id: fangchenjia # GitHub repo owner
+    repository: blog-comment # Repository name to store issues
+    client_id: c9827692bea6131c37aa # GitHub Application Client ID
+    client_secret: 195960c30d16ec4a5071fdccdfe2abc796739bf6 # GitHub Application Client Secret
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
