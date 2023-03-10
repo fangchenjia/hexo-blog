@@ -219,7 +219,7 @@ comment:
   # See: https://github.com/imaegoo/twikoo
   twikoo:
     visitor: true
-    env_id: cosycosy.zeabur.app # Vercel or Tencent Cloud Function environment ID
+    env_id: https://cosycosy.zeabur.app # Vercel or Tencent Cloud Function environment ID
     region: # environment region. If select Guangzhou, fill in "ap-guangzhou". (optional)
 
 # ---------------------------------------------------------------------------------------
