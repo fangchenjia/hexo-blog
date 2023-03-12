@@ -103,8 +103,8 @@ menu: #you can customize, i18n files are in the theme's languages folder. fa-reg
   Links: 
     icon: fa-regular fa-link
     submenus:
-      myPortfolio: /link1
-      music: /link2
+      myPortfolio: https://portfolio.cosycosy.cn
+      music: https://music.cosycosy.cn
 
   # ...... # you can add more
 
