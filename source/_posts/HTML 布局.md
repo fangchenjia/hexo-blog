@@ -1,6 +1,8 @@
 ---
-title: 布局
+title: HTML 布局
 comments: true
+thumbnail: "https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%2520(3).png"
+cover: false
 tags:
   - html
   - css

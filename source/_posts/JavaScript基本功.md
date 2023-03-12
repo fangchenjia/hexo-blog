@@ -1,38 +1,81 @@
 ---
-title: js必会手写
+title: JavaScript基本功
 comments: true
 tags:
   - JavaScript
 categories:
   - JavaScript
 description:
-  - 作为一名优秀前端必须得会的一些手写题
+  - 作为一名前端基本功不扎实怎么行嘞。
 abbrlink: 34ad279a
+thumbnail: 'https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%20(1).png'
+banner: false
 date: 2021-08-28 08:34:39
 updated: 2021-08-28 08:34:39
 ---
 
-## 数据类型判断
+<!-- more -->
+## 数据类型
+
+### 基本数据类型
+基本类型：
+字符串`String`、数字`Number`、布尔`Boolean`、空`Null`、未定义`Undefined`、符号`Symbol`、ES11-BigInt`BigInt`
+引用数据类型（对象类型）：
+对象`Object`、数组`Array`、函数`Function`。还有两个特殊的对象：正则`RegExp`和日期`Date`。
+
+###  数据类型判断
 
 > js 本身就自带一些可以检测数据类型的方法，但各有缺点
 
-### typeof
+#### typeof
 
-> `typeof`可以用于判断`除null`以外的基本数据类型，对于引用数据类型均返回`object`,函数返回`function`
-
-<!-- more -->
+> `typeof`可以用于判断`null`以外的基本数据类型，对于引用数据类型均返回`object`,函数返回`function`
 
 ```js
+/**************** 判断除null以外的基本数据类型 ****************/
+console.log(typeof 'xxxx'); //string
 console.log(typeof 1); //number
-console.log(typeof new Number(1)); //object
-console.log(typeof null); //object
+console.log(typeof true); //boolean
 console.log(typeof undefined); //undefined
+console.log(typeof Symbol()); // symbol
+console.log(typeof 10n); // bigint
+/**************** null 特殊情况 ****************/
+console.log(typeof null); //object
+/**************** 引用数据类型 ****************/
+console.log(typeof new Number(1)); //object
+console.log(typeof []); //object
 console.log(typeof function () {}); //function
 ```
 
-### instanceof
+#### instanceof
 
-#### instanceof 原理并手写
+##### instanceof 的使用
+
+> `instanceof`可以方便检测引用数据类型
+> 注意`左侧`如果是`基本数据类型`，直接返回`false`
+> 右侧必须是`引用数据类型`，否则报错
+```js
+/**************基本数据类型*****************/
+let num = 1;
+num instanceof Number; // false 基本数据类型直接返回false
+num = new Number(1); 
+num instanceof Number; // true 
+
+null instanceof Object // false
+
+/**************引用数据类型*****************/
+let arr = [];
+arr instanceof Array; // true
+arr instanceof Object; // true
+
+/**************顺便检验校验你对原型链的掌握*****************/
+function A() {}
+let a = new A();
+a instanceof Function; // false
+a instanceof Object; // true
+A instanceof Function; // true
+```
+##### instanceof 原理并手写
 
 > 检测某个实例的原型链上是否含有这个类的原型属性
 
@@ -50,31 +93,8 @@ function myInstanceof(left, right) {
   }
 }
 ```
-
-#### instanceof 的使用
-
-> `instanceof`可以方便检测引用数据类型，但基本数据类型检测繁琐，并且检测不全,`注意左侧必须是对象（object），如果不是，直接返回false`
-
-```js
-/**************基本数据类型*****************/
-let num = 1;
-num instanceof Number; // false
-num = new Number(1);
-num instanceof Number; // true
-/**************复杂数据类型*****************/
-let arr = [];
-arr instanceof Array; // true
-arr instanceof Object; // true
-/**************注意*****************/
-function A() {}
-let a = new A();
-a instanceof Function; // false
-a instanceof Object; // true
-A instanceof Function; // true
-```
-
-### Object.prototype.toString
-
+#### Object.prototype.toString
+> 适用于所有数据类型，但需要手动截取判断
 > 通过`Object.prototype.toString`然后截取，可以方便获取各种数据的类型
 
 ```js
@@ -86,6 +106,7 @@ function myTypeof(obj) {
 console.log(myTypeof([])); //array
 console.log(myTypeof({})); //object
 console.log(myTypeof(1)); //number
+console.log(myTypeof(null)); // unll
 ```
 
 ## 手写继承
@@ -165,7 +186,7 @@ s1.getSuperValue(); // Uncaught TypeError: s1.getSuperValue is not a function
 ```
 
 ### 组合继承
-
+> 原型链继承和构造函数继承相结合
 ```js
 //声明父类
 function SuperClass(id) {
@@ -216,12 +237,12 @@ SubClass.prototype.constructor = SubClass;
 // 寄生式组合继承
 function F() {}
 F.prototype = SpuerClass.prototype;
-let f = new F();
+let f = new F();  // 这样就不会重复执行父构造函数
 f.constructor = SubClass;
 SubClass.prototype = f;
 //可以进行封装一下
 function inheritObject(o) {
-  function F() {}
+  function F() {};
   F.prototype = o;
   return new F();
 }
@@ -335,12 +356,91 @@ flat(arr, Infinity); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 ## 手写深拷贝
 
-> 参考我以前写的博客
-> [js 深拷贝与浅拷贝](https://cosycosy.cn/2836dd7e.html)
+### 递归的方式实现深拷贝
+
+```js
+function deepClone(target) {
+  //定义一个返回变量
+  let res;
+  //如果target是对象如null，array等
+  if (typeof target === "object") {
+    if (Array.isArray(target)) {
+      //target为数组
+      res = [];
+      for (let i in target) {
+        res.push(deepClone(target[i]));
+      }
+    } else if (target === null) {
+      //target为null
+      res = null;
+    } else if (target.constructor === RegExp) {
+      //target为正则对象
+      res = target;
+    } else {
+      // target为普通对象
+      res = {};
+      for (let item in target) {
+        res[item] = deepClone(target[item]);
+      }
+    }
+    //target为基本数据类型或者为函数，直接赋值
+  } else {
+    res = target;
+  }
+  //返回结果
+  return res;
+}
+```
+
+测试一下
+
+```js
+var testObj = {
+  arr: [{ a: 1 }, null, 3],
+  obj: {
+    name: "zlh",
+    age: 100,
+  },
+  fn: function () {
+    console.log("hello");
+  },
+  reg: /a(b)/,
+};
+
+let cloneObj = deepClone(testObj);
+testObj.arr = [];
+testObj.obj.name = "fcj";
+console.log(testObj.arr); //[]
+console.log(cloneObj.arr); //[{ a: 1 }, null, 3]
+console.log(testObj.obj.name); //fcj
+console.log(cloneObj.obj.name); //zlh
+```
+
+这样就简单的实现了一个深拷贝，可以进行多级的深拷贝，而且 function，unll 等特殊的值也能全部拷贝成功，修改里边的值也不会有任何问题
+
+###  利用 JSON.stringify()以及 JSON.parse()
+
+> 使用 JSON.stringify()以及 JSON.parse()还是挺简单的，但不可以拷贝 `undefined` ， `function`， `RegExp` 等类型
+
+```js
+function clone(target) {
+  return JSON.parse(JSON.stringify(target));
+}
+/*********测试************/
+let obj = {
+  a: 1,
+  b: { a: 1 },
+  c: function () {},
+  d: /a(b)/
+};
+let cloneObj = clone(obj);
+console.log(cloneObj.c); //undefined
+console.log(cloneObj.d); //{}
+```
 
 ## 观察者与发布订阅者模式
 
-1. 观察者模式
+### 1. 观察者模式
 
 > 观察者模式实现的，其实就是当目标对象的某个属性发生了改变，所有依赖着目标对象的观察者都将接到通知，做出相应动作。 所以在目标对象的抽象类里，会保存一个观察者序列。当目标对象的属性发生改变生，会从观察者队列里取观察者调用各自的方法。
 
@@ -383,7 +483,7 @@ sub.notify("我更新了");
 // 观察者2收到信息我更新了
 ```
 
-2. 发布订阅者模式
+### 2. 发布订阅者模式
    > 发布-订阅是一种消息范式，消息的发送者（称为发布者）不会将消息直接发送给特定的接收者（称为订阅者）。而是将发布的消息分为不同的类别，无需了解哪些订阅者（如果有的话）可能存在。同样的，订阅者可以表达对一个或多个类别的兴趣，只接收感兴趣的消息，无需了解哪些发布者（如果有的话）存在。
 
 ```js

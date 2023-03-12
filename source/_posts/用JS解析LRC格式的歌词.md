@@ -2,6 +2,8 @@
 title: 用JS解析LRC格式的歌词
 toc: true
 comments: true
+thumbnail: 'https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%20(4).png'
+banner: false
 tags:
   - JavaScript
 categories:
@@ -17,7 +19,7 @@ updated: 2021-05-19 20:38:23
 
 <!-- more -->
 
-废话少说，下面是 api 返回的数据
+下面是 api 返回的数据
 ![](https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/blogpostimg/%E7%94%A8JS%E8%A7%A3%E6%9E%90LRC%E6%A0%BC%E5%BC%8F%E7%9A%84%E6%AD%8C%E8%AF%8D/Snipaste_2021-05-19_20-42-55.png)
 
 ## 把 LRC 歌词解析为 JS 对象
