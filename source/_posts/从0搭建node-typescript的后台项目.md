@@ -187,7 +187,12 @@ module.exports = {
     "lint": "eslint --ext .ts src/"
   }
 ```
-
+这里要到`tsconfig.json` 添加 `"outDir": "dist"`。
+```json
+"compilerOptions": {
+  "outDir": "dist",
+}
+```
 现在就可以`npm run dev`进行开发了，部署就`npm run prod`。
 
 ## 配置环境变量
