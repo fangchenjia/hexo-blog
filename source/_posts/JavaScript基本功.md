@@ -5,11 +5,9 @@ tags:
   - JavaScript
 categories:
   - JavaScript
-description:
-  - 作为一名前端基本功不扎实怎么行嘞。
+description: 作为一名前端基本功不扎实怎么行嘞。
 abbrlink: 34ad279a
-thumbnail: 'https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%20(1).png'
-banner: false
+cover: "https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%20(1).png"
 date: 2021-08-28 08:34:39
 updated: 2021-08-28 08:34:39
 ---

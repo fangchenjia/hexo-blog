@@ -3,13 +3,11 @@ title: 用JS解析LRC格式的歌词
 toc: true
 comments: true
 thumbnail: 'https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%20(4).png'
-banner: false
 tags:
   - JavaScript
 categories:
-  - JavaScript
-description:
-  - 在还原网易云音乐项目的时候，遇到后台api返回LRC格式的歌词，记录一下解析的方法
+  - 前端开发
+description: 在还原网易云音乐项目的时候，遇到后台api返回LRC格式的歌词，记录一下解析的方法
 abbrlink: 25b2d1a6
 date: 2021-05-19 20:38:23
 updated: 2021-05-19 20:38:23

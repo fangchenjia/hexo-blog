@@ -1,13 +1,13 @@
 ---
 title: 从0搭建node+typescript的后台项目
 date: 2023-03-22 22:03:26
+ai: true
 tags:
   - typescript
   - express
 categories:
   - node
-description:
-  - 第一次用ts写后台项目，看了很多博客，记录一下搭建的全过程(〃'▽'〃)!
+description: 第一次用ts写后台项目，看了很多博客，记录一下搭建的全过程(〃'▽'〃)!
 ---
 
 # 初始化项目

@@ -2,14 +2,12 @@
 title: vscode用户代码段的设置
 toc: true
 comments: true
-thumbnail: "https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover.png"
-cover: false
+cover:  "https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover.png"
 tags:
   - vscode
 categories:
   - tool
-description:
-  - vscode常用的使用技巧
+description: vscode常用的使用技巧
 keywords:
   - vscode
   - 用户代码段

@@ -1,0 +1,54 @@
+- class_name: 文档
+  class_desc: 常用的api文档
+  flink_style: anzhiyu
+  link_list:
+    - name: VUE
+      hundredSuffix: ""
+      link: https://cn.vuejs.org/
+      avatar: https://cn.vuejs.org/logo.svg
+      descr: 渐进式JavaScript框架
+    - name: VueUse
+      hundredSuffix: ""
+      link: https://vueuse.org/
+      avatar: https://d33wubrfki0l68.cloudfront.net/2f6479d73bc25170dc532dd42e059166573bf478/61057/favicon.svg
+      descr: 一个提升开发效率的vue3工具库
+    - name: Electron
+      hundredSuffix: ""
+      link: https://www.electronjs.org/zh/
+      avatar: https://www.electronjs.org/zh/assets/img/logo.svg
+      descr: 使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用
+    - name: Uniapp
+      hundredSuffix: ""
+      link: https://uniapp.dcloud.io/
+      avatar: https://web-assets.dcloud.net.cn/unidoc/zh/uni.png
+      descr: 使用 Vue.js 开发跨平台应用的前端框架
+
+- class_name: UI框架
+  class_desc: 个人常用的UI框架文档
+  flink_style: anzhiyu
+  link_list:
+    - name: Vant
+      hundredSuffix: ""
+      link: https://vant-contrib.gitee.io/vant/v3/#/zh-CN/
+      avatar: https://fastly.jsdelivr.net/npm/@vant/assets/logo.png
+      descr: 轻量、可靠的移动端 Vue 组件库
+    - name: ElementPlus
+      hundredSuffix: ""
+      link: https://element-plus.gitee.io/#/zh-CN
+      avatar: https://user-images.githubusercontent.com/10731096/95823103-9ce15780-0d5f-11eb-8010-1bd1b5910d4f.png
+      descr: 基于element-ui的二次开发
+    - name: AntDesign
+      hundredSuffix: ""
+      link: https://ant.design/index-cn
+      avatar: https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg
+      descr: 一个企业级产品设计体系
+    - name: AntDesignVue
+      hundredSuffix: ""
+      link: https://2x.antdv.com/docs/vue/introduce-cn/
+      avatar: https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg
+      descr: Ant Design 的 Vue 实现，开发和服务于企业级后台产品
+    - name: naive-ui
+      hundredSuffix: ""
+      link: https://www.naiveui.com/zh-CN/os-theme
+      avatar: https://camo.githubusercontent.com/b8ebecade711b9ae1fa306e7a1c9dd680fb56b0e2b9f015fec9cbad343570353/68747470733a2f2f6e6169766575692e6f73732d636e2d686f6e676b6f6e672e616c6979756e63732e636f6d2f6e616976656c6f676f2e737667
+      descr: 一个 Vue 3 的轻量级组件库

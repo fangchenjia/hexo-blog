@@ -1,0 +1,138 @@
+- class_name: 关于页
+  subtitle: 生活明朗，万物可爱✨
+  avatarImg: /asset/img/bear.jpg
+  name: 方陈家
+  description: 是一名 前端工程师、独立开发者
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 学习
+      - 生活
+      - 程序
+      - 体验
+  helloAbout: Hello there!
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    item:
+      - EDU,机械电子工程专业
+    img: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png
+  statistic:
+    link: /archives
+    text: 文章隧道
+    cover: https://img02.anzhiy.cn/adminuploads/1/2022/09/23/632d634f8376d.jpg
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国，长沙市
+    background: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e6f48981d8.jpg
+    backgroundDark: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ebf1f3e65.jpg
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 1999
+    selfInfoTips2: 长沙学院
+    selfInfoContent2: 机械电子工程
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 前端工程师
+  personalities:
+    author_name: 调停者
+    personality_type: INFP-A
+    photo_url: /asset/img/mine.jpg
+    personality_img: https://www.16personalities.com/static/images/theory/traits/16personalities_trait_introverted.svg
+    name_url: https://www.16personalities.com/ch/infp-%E4%BA%BA%E6%A0%BC
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 生活明朗，
+    maxim_bottom: 万物可爱。
+  buff:
+    buff_tips: 特长
+    buff_top: 脑回路新奇的 酸菜鱼
+    buff_bottom: 技术崇拜
+  game:
+    game_tips: 爱好游戏
+    game_title: 俄罗斯钓鱼4
+    game_uid: "ID: EDG Jiejie"
+    game_bg: https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/%E4%BF%84%E9%92%934%E5%AE%A3%E4%BC%A0.jpg
+  comic:
+    comic_tips: 动漫
+    comic_title: 追番
+    comic_list:
+      - name: 海贼王
+        href: 
+        cover: https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/%E8%B7%AF%E9%A3%9E.webp
+      - name: 画江湖之不良人
+        href: 
+        cover: https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/%E4%B8%8D%E8%89%AF%E4%BA%BA.webp
+      - name: 紫罗兰永恒花园
+        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886315d658.webp
+      - name: 鬼灭之刃
+        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886403d472.webp
+      - name: JOJO的奇妙冒险 黄金之风
+        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398862649585.webp
+  like:
+    like_tips: 关注偏好
+    like_title: 数码科技
+    like_bg: https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/mac.webp
+    like_bottom: macOS
+  music:
+    music_tips: 音乐偏好
+    music_title: 赵雷、民谣
+    music_bg: https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/%E8%B5%B5%E9%9B%B7.webp
+    music_link: /music
+  reward_list:
+    - name: 海阔蓝
+      amount: 8.8
+      datatime: 2023-03-28
+    - name: LK66
+      amount: 66.6
+      datatime: 2023-03-24
+    - name: 张时貳
+      amount: 6.6
+      datatime: 2023-01-22
+    - name: ZeroAf
+      amount: 9.9
+      datatime: 2022-12-14
+    - name: LuckyWangXi
+      amount: 6.6
+      datatime: 2022-12-14
+    - name: 刀中日月长
+      amount: 10
+      datatime: 2022-11-16
+    - name: 鹿啵包
+      amount: 10
+      datatime: 2022-11-08
+    - name: 疾速k
+      amount: 50
+      datatime: 2022-09-20
+    - name: 伴舟先生大霖子
+      amount: 4.03
+      datatime: 2022-10-27
+      suffix: 贝壳
+    - name: Magica_0x0
+      amount: 3.36
+      datatime: 2022-10-07
+      suffix: 贝壳
+    - name: 名字就是要短像这样
+      amount: 3.36
+      datatime: 2022-08-25
+      suffix: 贝壳
+    - name: Leviathan520
+      amount: 1.34
+      datatime: 2022-08-23
+      suffix: 贝壳
+    - name: 托马斯
+      amount: 10
+      datatime: 2022-08-19
+    - name: 哇是猫猫欸
+      amount: 1.34
+      datatime: 2022-08-19
+      suffix: 贝壳
+
+  extra: false

@@ -2,15 +2,13 @@
 title: jQuery源码的简单实现方式
 toc: true
 comments: true
-thumbnail: 'https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%20(2).png'
-banner: false
+cover: 'https://myblog-1303177382.cos.ap-chongqing.myqcloud.com/cover%20(2).png'
 tags:
   - JavaScript
   - jQuery
 categories:
   - JavaScript
-description:
-  - "jQuery的源码从整体上看,就是执行了一个匿名函数,在这个函数里面,为window绑定了一个$函数"
+description: "jQuery的源码从整体上看,就是执行了一个匿名函数,在这个函数里面,为window绑定了一个$函数"
 keywords:
   - jquery
   - 源码
