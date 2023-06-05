@@ -5,6 +5,7 @@ pipeline  {
             steps {
                 git credentialsId: 'gitee-183', url: 'https://gitee.com/fangchenjia/hexo-blog.git'
                 sh '''
+                rm themes/anzhiyu -rf
                 git clone -b main https://gitee.com/fangchenjia/hexo-theme-anzhiyu-mine.git themes/anzhiyu
                 '''
             }
