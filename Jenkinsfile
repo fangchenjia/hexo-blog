@@ -4,11 +4,15 @@ pipeline  {
         stage('Pull') {
             steps {
                 git credentialsId: 'gitee-183', url: 'https://gitee.com/fangchenjia/hexo-blog.git'
+                sh '''
+                git clone -b main https://gitee.com/fangchenjia/hexo-theme-anzhiyu-mine.git themes/anzhiyu
+                '''
             }
         }
         stage('Install') {
             steps {
                 nodejs(nodeJSInstallationName: 'v14.13.0') {
+
                     sh '''node -v
                     npm -v
                     npm i'''
