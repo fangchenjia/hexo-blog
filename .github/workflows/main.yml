@@ -20,7 +20,7 @@ jobs:
       - name: Clone theme
         run: |
           rm themes/anzhiyu -rf
-          git clone -b main https://gitee.com/fangchenjia/hexo-theme-anzhiyu-mine.git themes/anzhiyu
+          git clone -b main https://github.com/fangchenjia/hexo-theme-anzhiyu-mine.git themes/anzhiyu
       # 安装 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v2
