@@ -55,6 +55,7 @@ jobs:
           script: |
             docker stop hexo-blog || true
             docker rm hexo-blog || true
+            docker rmi fangchenjia/hexo-blog || true
             docker pull fangchenjia/hexo-blog
             docker run -d -p 8083:80 --name hexo-blog fangchenjia/hexo-blog
 
